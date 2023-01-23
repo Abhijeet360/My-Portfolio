@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+header a img {
+    width: 6rem;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 2rem;
+    margin: 0 2rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ffff;
+    text-transform: capitalize;
+}
