@@ -1,50 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
     font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
 }
 
-.container {
-    width: 100%;
-    background-color: blue;
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    height: 10vh;
+    border: 2px solid black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-family: 'Poppins', sans-serif;
+    padding: 0 9%;
 }
 
-header a {
+header .logo {
+    width: 30%;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: black;
+    justify-content: start;
 }
 
-header a img {
-    width: 6rem;
-    padding: 0.5rem;
+header .logo img {
+    width: 4rem;
+    height: 4rem;
 }
 
-nav ul {
+header .logo h1 {
+    margin-left: 0.5rem;
+}
+
+.navbar {
+    width: 70%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: stretch;
+    align-items: center;
+    justify-content: end;
+
 }
 
-nav li {
+.navbar ul {
+    display: flex;
+    padding-right: 5rem;
+}
+
+.navbar ul li {
+    margin: 0 1.5rem;
     list-style-type: none;
 }
 
-nav a {
-    display: inline-block;
-    padding: 2rem;
-    margin: 0 2rem;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #ffff;
-    text-transform: capitalize;
+header .navbar ul li a {
+    font-size: 1.57rem;
+    font-weight: 600;
+    letter-spacing: 0.04rem;
+}
+
+section {
+    width: 100vw;
+    height: 90vh;
+    border: 2px solid black;
 }
