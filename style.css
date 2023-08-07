@@ -64,6 +64,10 @@ header .navbar ul li a {
     letter-spacing: 0.04rem;
 }
 
+.navbar .sun {
+    display: none;
+}
+
 section {
     width: 100vw;
     height: 90vh;
