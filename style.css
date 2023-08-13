@@ -10,10 +10,12 @@
 html {
     font-size: 62.5%;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 body {
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -22,6 +24,7 @@ header {
     border: 2px solid black;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 9%;
     position: fixed;
     top: 0;
@@ -31,10 +34,9 @@ header {
 }
 
 header .logo {
-    width: 30%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: end;
 }
 
 header .logo img {
@@ -47,20 +49,17 @@ header .logo h1 {
 }
 
 .navbar {
-    width: 70%;
     display: flex;
     align-items: center;
-    justify-content: end;
-
+    justify-content: center;
 }
 
 .navbar ul {
     display: flex;
-    display: none;
 }
 
 .navbar ul li {
-    margin: 0 0 0 2.5rem;
+    margin: 0 2.5rem;
     list-style-type: none;
 }
 
@@ -70,28 +69,27 @@ header .navbar ul li a {
     letter-spacing: 0.04rem;
 }
 
-.navbar .icoans {
+.icoans {
     display: flex;
 }
 
-.navbar .icoans .moon {
-    /* display: none; */
-    padding: 0 0 0 4rem;
-}
-
-.navbar .icoans .sun {
+.icoans .moon {
     display: none;
-    padding: 0 0 0 4rem;
 }
 
-.navbar .icoans .menu {
-    /* display: none; */
-    padding: 0 0 0 4rem;
-}
-
-.navbar .icoans .cross {
+.icoans .sun {
     display: none;
-    padding: 0 0 0 4rem;
+
+}
+
+.icoans .menu {
+    display: none;
+    padding: 0;
+}
+
+.icoans .cross {
+    display: none;
+
 }
 
 section {
@@ -106,4 +104,83 @@ section {
     left: 0;
     height: 100%;
     width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px) {
+    /* html {
+        font-size: 55%;
+    } */
+
+    .icoans,
+    .icoans .menu {
+        display: block;
+        z-index: 999;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .navbar {
+        width: 50vw;
+        height: 100vh;
+        background-color: cyan;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 0 0 2.5rem 0;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .icoans .cross {
+        display: block;
+    }
+
+    .active .icoans .menu {
+        display: none;
+    }
 }
