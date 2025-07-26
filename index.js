@@ -5,3 +5,9 @@ const toggleNavbar = () => {
 }
 
 menu_btn.addEventListener("click", () => toggleNavbar())
+
+
+
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    max: 15,
+});

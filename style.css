@@ -16,6 +16,12 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    text-transform: capitalize;
+    background-color: #ccf0fe;
+}
+
+ul li {
+    list-style-type: none;
 }
 
 header {
@@ -48,19 +54,18 @@ header .logo h1 {
     margin-left: 0.5rem;
 }
 
-.navbar {
+/* .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .navbar ul {
     display: flex;
 }
 
 .navbar ul li {
-    margin: 0 2.5rem;
-    list-style-type: none;
+    margin: 0 1.5rem;
 }
 
 header .navbar ul li a {
@@ -70,17 +75,17 @@ header .navbar ul li a {
 }
 
 .icoans {
-    display: flex;
+    display: none;
 }
 
-.icoans .moon {
+/* .icoans .moon {
     display: none;
 }
 
 .icoans .sun {
     display: none;
 
-}
+} */
 
 .icoans .menu {
     display: none;
@@ -98,12 +103,93 @@ section {
     border: 2px solid black;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
 .home #particles-js {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+}
+
+.home .left {
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+}
+
+.left img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: #ffcf40;
+}
+
+.home img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.home .right {
+    z-index: 999;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    /* overflow: hidden; */
+
+}
+
+.home .right h2 {
+    font-size: 4.5rem;
+
+}
+
+.home .right p {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.about-btn {
+    margin: 3.5rem 0;
+}
+
+.btn {
+    padding: 8px 30px;
+    border: 2px solid black;
+}
+
+.home .right .social ul li {
+    display: inline-block;
+    /* margin-bottom: 14px; */
+
+}
+
+.home .right .social ul li a {
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 44px;
+    color: #00d9ff;
+    background-color: #09011b;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 2rem;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 
@@ -121,17 +207,10 @@ section {
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 980px) {
-    /* html {
+    html {
         font-size: 55%;
-    } */
+    }
 
     .icoans,
     .icoans .menu {
@@ -182,5 +261,55 @@ section {
 
     .active .icoans .menu {
         display: none;
+    }
+
+    .home {
+        display: block;
+    }
+
+    .home .right h1 {
+        font-size: 3.5rem;
+
+    }
+
+    .home .right p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    /* .home {
+        display: block;
+    } */
+
+
+    .home .right h1 {
+        font-size: 3.5rem;
+    }
+
+    .home .right p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 45%;
+    }
+
+    .home {
+        display: block;
+    }
+
+    .home .right h1 {
+        font-size: 3.5rem;
+    }
+
+    .home .right p {
+        font-size: 2rem;
     }
 }

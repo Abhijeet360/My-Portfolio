@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
+<!-- <body oncontextmenu="return false"> -->
 <body>
+    <!-- header section start -->
     <header class=" header">
         <div class="logo">
             <img src="images/Abhijeet Pandey-logos_black1.png" alt="logo">
@@ -20,7 +22,7 @@
         </div>
         <nav class="navbar active">
             <ul>
-                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
@@ -30,32 +32,66 @@
             </ul>
         </nav>
         <div class="icoans">
-            <div class="moon"><i class="fa-regular fa-moon fa-2xl"></i></div>
-            <div class="sun"><i class="fa-regular fa-sun fa-2xl"></i></div>
+            <!-- <div class="moon"><i class="fa-solid fa-moon fa-2xl"></i></div> -->
+            <!-- <div class="sun"><i class="fa-solid fa-sun fa-2xl"></i></div> -->
             <div class="menu"><i class="fa-solid fa-bars fa-2xl"></i></div>
             <div class="cross"><i class="fa-solid fa-x fa-2xl"></i></div>
         </div>
     </header>
-    <section class="home">
+    <!-- header section end -->
+
+    <!-- Home section Start -->
+    <section class="home" id="home">
         <div id="particles-js"></div>
-        <!-- <h2>hero</h2> -->
+        <div class="left">
+            <img data-tilt src="images/cropped_image.png" alt="" srcset="">
+        </div>
+        <div class="right">
+            <div>
+                <h2>Hi There,<br>I'm Abhijeet Pandey</h2>
+                <p>i am into <span class="auto-type"></span></p>
+            </div>
+            <div class="about-btn"><a class="btn" href="#about">About</a></div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/abhijeetpandey360"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Abhijeet360"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/abhijeet_pandey360/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/abhijeetpandey360"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/abhijeet_p360"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
     </section>
-    <section class="home">
+    <!-- Home section end -->
+
+    <section class="about" id="about">
         <h2>hero</h2>
     </section>
-    <section class="home">
+    <section class="skills" id="skills">
         <h2>hero</h2>
     </section>
-    <section class="home">
+    <section class="education">
         <h2>hero</h2>
     </section>
-    <section class="home">
+    <section class="contact">
         <h2>hero</h2>
     </section>
 
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
     <script src="index.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+            typeSpeed: 100,
+            breakSpeed: 100,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>
