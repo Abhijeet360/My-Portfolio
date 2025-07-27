@@ -323,14 +323,79 @@ header .navbar ul li a {
     border-radius: 1.5rem;
 }
 
+.collage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+
+.collage .collage1,
+.collage2 {
+    border-radius: 1.5rem;
+    padding: 1rem;
+    /* border: 2px solid black; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.collage .collage1 h3,
+.collage2 h3 {
+    /* border: 2px solid black; */
+    font-size: 2.5rem;
+}
+
+.collage .collage1 p,
+.collage2 p {
+    /* border: 2px solid black; */
+    font-size: 1.5rem;
+}
+
+.collage-img {
+    width: 40rem;
+    height: 25rem;
+    /* border: 2px solid black; */
+
+}
+
+.collage-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    /* border: 2px solid black; */
+}
+
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-gap: 1.5rem;
+
+}
+    
+.parent2 .div1 {
+    width: 100%;
+    height: 30rem;
+    background-color: #308aa9;
+    /* display: inline-block;
+    align-items: center;
+    justify-content: center; */
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-radius: 1.5rem;
+}
 
 
 
 
-
-
-
-
+/* Responsive Design */
 
 @media (max-width: 980px) {
     html {
@@ -420,6 +485,10 @@ header .navbar ul li a {
     .home .right p {
         font-size: 2rem;
     }
+
+    .collage-img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -452,5 +521,13 @@ header .navbar ul li a {
     .about .about-content .right {
         width: 100%;
         order: 1;
+    }
+
+    .collage {
+        display: block;
+    }
+
+    .collage-img {
+        width: 100%;
     }
 }
