@@ -374,78 +374,93 @@ header .navbar ul li a {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     /* grid-template-rows: repeat(2, 1fr); */
     grid-gap: 1.5rem;
-    /* overflow: hidden; */
+ 
 
 }
+
 
 .parent2 .div1 {
     width: 100%;
     height: 30rem;
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    box-shadow: 0 .7rem 1rem rgba(0, 0, 0, .3);
+    position: relative;
     overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    height: 30rem;
+    background: #fff;
+    border: none;
 }
 
 .parent2 .div1 img {
+    height: 100%;
     width: 100%;
-    height: 30rem;
-    display: flex;
-    position: absolute;
+    object-fit: cover;
 }
 
-.overlay {
+.parent2 .div1 .content {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    bottom: 0;
+    top: 85%;
     left: 0;
-    right: 0;
-    /* background-color: yellow; */
-    overflow: hidden;
-    width: 100%;
-    height: 4rem;
-    transition: .5s ease;
-    /* padding: 0 1rem; */
-    /* z-index: 999; */
-}
-
-.div1:hover .overlay{
-    height: 70%;
-    /* opacity: 0.9; */
-
-}
-.div1:hover .overlay .text{
-    opacity: 0.9;
-
-}
-
-.div1 .overlay .text1 {
-    height: 4rem;
-    background-color: yellowgreen;
-    border: 1px solid black;
-    font-size: 2rem;
-    opacity: 1;
-    /* text-align: center; */
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
+    flex-direction: column;
+}
+
+.parent2 .div1 .content .tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-
+    height: 4.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    background: #ffd900;
 }
 
-.text2 {
-    /* background-color: #ffffff; */
-
+.parent2 .div1 .content .tag h3 {
+    font-size: 2rem;
 }
 
-.div1 .overlay p {
-    color: black;
+.parent2 .div1:hover .content {
+    top: 25%;
+    transition: top 0.5s ease-in-out;
+}
+
+.desc {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desc p {
     font-size: 1.5rem;
-    padding: 0.5rem;
-    /* text-align: center; */
-    /* opacity: 0.8; */
-
 }
 
+.desc .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
 
+.desc .btns .btn {
+    line-height: 0;
+    display: inline;
+    padding: 1.5rem 2.5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: rgb(12, 12, 12);
+    margin-right: 2rem;
+}
 
-
+.desc .btns .btn:hover {
+    background: #310ae0f5;
+}
 
 
 
