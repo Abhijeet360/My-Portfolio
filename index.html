@@ -326,17 +326,18 @@
                 <img data-tilt src="images/back3.png" alt="">
             </div>
             <div class="right-form">
-                <form action="Post" method="post">
-                    <input type="text" placeholder="Your Name" required><br>
-                    <input type="email" placeholder="Your Email" required><br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f3574890-a836-4f81-a276-d27938f4944c">
+                    <input type="text" name="name" placeholder="Your Name" autocomplete="off" required><br>
+                    <input type="email" name="email" placeholder="Your Email" autocomplete="off" required><br>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea><br>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
 
     </section>
-    <section class="contact">
+    <section class="footer">
         <h2>hero</h2>
     </section>
 

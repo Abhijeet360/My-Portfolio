@@ -505,7 +505,33 @@ textarea {
     margin-bottom: 2rem;
     width: 100%;
     padding: 1rem 1rem;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
+
+input:focus {
+    border: 2px solid #308aa9;
+}
+
+textarea:focus {
+    border: 2px solid #308aa9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Design */
 
@@ -578,7 +604,15 @@ textarea {
     .home .right p {
         font-size: 2rem;
     }
+
 }
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     html {
@@ -598,10 +632,19 @@ textarea {
         font-size: 2rem;
     }
 
-    .collage-img {
-        width: 100%;
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 425px) {
     html {
@@ -642,4 +685,12 @@ textarea {
     .collage-img {
         width: 100%;
     }
+     .left-img {
+        display: none;
+    }
+
+    .contect-content .right-form {
+        width: 100%;
+    }
+
 }
