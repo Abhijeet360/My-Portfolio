@@ -17,14 +17,19 @@ body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
     /* text-transform: capitalize; */
-    background-color: #f1f2f6;
+    /* background-color: #f1f2f6; */
     /* background-color: #121e28; */
 }
 
 section {
-    /* height: 100vh; */
     padding: 2rem 9%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+}
+
+footer {
+    padding: 0 9%;
+    /* border: 2px solid black; */
+    /* background-color: red; */
 }
 
 section h2 {
@@ -62,6 +67,7 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    opacity: 0.9;
 }
 
 header .logo {
@@ -137,7 +143,7 @@ header .navbar ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    background-color: #f1f2f6;
 }
 
 .home #particles-js {
@@ -155,7 +161,7 @@ header .navbar ul li a {
     justify-content: center;
     width: auto;
     height: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .home .left img {
@@ -164,7 +170,7 @@ header .navbar ul li a {
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    background-color: #308aa9;
+    background-color: #FFE100;
 }
 
 .home img:hover {
@@ -175,7 +181,7 @@ header .navbar ul li a {
     z-index: 999;
     width: auto;
     height: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* overflow: hidden; */
 
 }
@@ -237,7 +243,7 @@ header .navbar ul li a {
 .home .right .social ul li {
     display: inline-block;
     /* margin-bottom: 14px; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* align-items: center; */
 }
 
@@ -300,29 +306,32 @@ header .navbar ul li a {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-
+.skills {
+   background-color: #5505a9;
+}
 .parent {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    /* grid-template-rows: repeat(2, 1fr); */
-    grid-gap: 3.5rem;
-
+    padding: 2rem;
+    grid-gap:2rem;
+    border-radius: 1rem;
+    background-color: #33026d;
 }
 
 .parent .div1 {
     width: 100%;
     height: auto;
-    background-color: #308aa9;
-    /* display: inline-block;
-    align-items: center;
-    justify-content: center; */
+    background-color: #05001f;
     color: #fff;
     font-size: 2rem;
     text-align: center;
     padding: 1.5rem 0;
     border-radius: 1.5rem;
 }
-
+.parent .div1:hover {
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+}
 .collage {
     width: 100%;
     height: auto;
@@ -521,15 +530,69 @@ textarea:focus {
     border: 2px solid #308aa9;
 }
 
+.footerinfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    text-transform: capitalize;
+}
 
+.footerinfo1 {
+    width: 30%;
+    height: auto;
+    /* border: 2px solid black; */
+}
 
+.footerinfo .footerinfo1 h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 1.5rem 0;
+}
 
+.footerinfo .footerinfo1 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 3rem;
+}
 
+.footerinfo .footerinfo1 li {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 1rem;
+}
 
+.footerinfo .footerinfo1 ul li i {
+    padding-right: 1rem;
+}
 
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 1.5rem 0;
+}
 
+.footerinfo2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    text-transform: capitalize;
+}
 
-
+.footerinfo2 p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
 
 
 
@@ -604,6 +667,7 @@ textarea:focus {
     .home .right p {
         font-size: 2rem;
     }
+
 
 }
 
@@ -685,12 +749,14 @@ textarea:focus {
     .collage-img {
         width: 100%;
     }
-     .left-img {
+
+    .left-img {
         display: none;
     }
 
     .contect-content .right-form {
         width: 100%;
     }
+
 
 }
